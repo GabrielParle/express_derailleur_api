@@ -113,7 +113,7 @@ app.delete('/hangers/:id', (req, res) => {
 	})
 
 })
-const dev_db_url = process.env.MONGODDB_URI || 'mongodb://localhost:27017/posts';
+const dev_db_url = process.env.MONGODB_URI || 'mongodb://localhost:27017/posts';
 
 mongoose.connect(dev_db_url);
 var db = mongoose.connection;
