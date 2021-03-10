@@ -7,7 +7,7 @@ const Hangers = require("./models/hangers")
 const http = require("http")
 var helmet = require('helmet');
 
-const port = 8081;
+const port = process.env.PORT || 8081;
 
 const app = express();
 app.use(morgan('combined'));
